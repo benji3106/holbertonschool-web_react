@@ -1,4 +1,6 @@
-// Interface Teacher
+// ==========================================
+// TASK 1 : Teacher Interface & Instance
+// ==========================================
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
