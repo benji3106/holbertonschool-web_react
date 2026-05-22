@@ -87,4 +87,3 @@ console.log(director1);
 console.log(printTeacher("John", "Doe"));
 console.log(student.displayName());
 console.log(student.workOnHomework());
-// Exports

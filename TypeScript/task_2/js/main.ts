@@ -65,6 +65,18 @@ const executeWork = (employee: Director | Teacher): string => {
 };
 
 // ==========================================
+// TASK 7 : String literal types
+// ==========================================
+
+type Subjects = 'Math' | 'History';
+
+const teachClass = (todayClass: Subjects): string => {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  }
+  return 'Teaching History';
+};
+// ==========================================
 // EXECUTIONS / CONSOLE LOGS
 // ==========================================
 console.log(createEmployee(200));   // Teacher
@@ -72,3 +84,5 @@ console.log(createEmployee(1000));  // Director
 console.log(createEmployee('$500')); // Director
 console.log(executeWork(createEmployee(200)));   // Getting to work
 console.log(executeWork(createEmployee(1000)));  // Getting to director tasks
+console.log(teachClass('Math'));    // Teaching Math
+console.log(teachClass('History')); // Teaching History
